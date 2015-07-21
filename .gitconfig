@@ -1,0 +1,26 @@
+[user]
+	name = 
+	email = 
+[core]
+	excludesfile = /Users/mazlix/.gitignore_global
+    editor = vim
+    autocrlf = false
+    safecrlf = true
+    ;pager = cat
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:'%Cgreen%h%Creset %ad | %s%d [%C(cyan)%an%Creset]' --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
+[color]
+    ui = true
+[github]
+    user = mazlix
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
